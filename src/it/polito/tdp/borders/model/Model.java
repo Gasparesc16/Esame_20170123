@@ -60,7 +60,8 @@ public class Model {
 			Country c1 = c.getStateUno();
 			Country c2 = c.getStateDue();
 			
-			grafo.addEdge(c1, c2);
+			if(!c1.equals(c2))
+				grafo.addEdge(c1, c2);
 			
 		}
 		
